@@ -56,13 +56,16 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 
 </details>
 
-### Vorgestelltes Projekt
+<details>
+<summary><b>⭐ Vorgestelltes Projekt</b></summary>
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=de" alt="aria-er"/></a>
 
 **aria-er** macht aus verstreuten Luftqualitätsmessungen der Umweltagentur der Emilia-Romagna einen einheitlichen, getesteten Datensatz: Überschreitungen gesetzlicher Grenzwerte, Schadstofftrends, Korrelation mit dem Wetter.
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
+
+</details>
 
 <details>
 <summary><b>📂 Weitere Projekte</b></summary>
@@ -105,7 +108,7 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 
 </details>
 
-<details>
+<details open>
 <summary><b>📊 Aktivität</b></summary>
 
 <div align="center">

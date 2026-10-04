@@ -56,13 +56,16 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 
 </details>
 
-### Projet phare
+<details>
+<summary><b>⭐ Projet phare</b></summary>
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=fr" alt="aria-er"/></a>
 
 **aria-er** transforme les mesures fragmentées de qualité de l'air de l'agence environnementale d'Émilie-Romagne en un jeu de données unifié et testé : dépassements des seuils légaux, tendances des polluants, corrélation avec la météo.
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
+
+</details>
 
 <details>
 <summary><b>📂 Autres projets</b></summary>
@@ -105,7 +108,7 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 
 </details>
 
-<details>
+<details open>
 <summary><b>📊 Activité</b></summary>
 
 <div align="center">
