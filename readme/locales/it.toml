@@ -1,0 +1,58 @@
+location = "Bologna"
+website_label = "Portfolio"
+website_path = "/it"
+footer = "Sempre aperto a una chiacchierata su Rust, sistemi di dati e software ben progettato."
+
+[about]
+title = "Chi sono"
+body = """
+Sono uno sviluppatore software di Bologna. Dal {{ since_year }} costruisco software backend e full-stack in **{{ company }}**,
+dove il mio strumento quotidiano è **Rust**: tengo alla correttezza, a modelli dati espliciti e a codice noioso da mantenere. Da poco sviluppo anche interfacce in **Angular**.
+
+Mi sto spostando verso il **Data Engineering**: ingestione, modellazione dei dati, orchestrazione e l'infrastruttura che trasforma dati grezzi in qualcosa di affidabile.
+[aria-er](https://github.com/{{ github_user }}/aria-er) è dove lo metto in pratica, da capo a fondo.
+
+In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Università di Bologna."""
+
+[now]
+title = "Ora"
+items = [
+  "Software in produzione in Rust in {{ company }}",
+  "Front-end con Angular",
+  "**aria-er**: ingestione in Rust, dbt e Dagster su open data della qualità dell'aria",
+  "**your-finance**: un'app di finanza personale in Rust e PostgreSQL",
+]
+
+[next]
+title = "Prossimi passi"
+items = [
+  "Dashboard Streamlit e deploy completo su GCP per aria-er",
+  "SQL avanzato e modellazione dei dati",
+  "Data warehouse in cloud e infrastructure as code",
+]
+
+[projects]
+title = "Progetti"
+col_project = "Progetto"
+col_description = "Descrizione"
+col_stack = "Stack"
+private = "privato"
+
+[projects.descriptions]
+aria-er = "Piattaforma dati end-to-end sulla qualità dell'aria in Emilia-Romagna (open data ARPAE): Parquet partizionato, modelli dbt testati, partizioni giornaliere in Dagster."
+your-finance = "App di finanza personale: API in Rust, PostgreSQL, client mobile e desktop."
+dump-backup-sorter = "Smista il dump del telefono in un archivio media datato e senza duplicati e in un backup di tutto il resto."
+portfolio = "Il mio sito personale, generato staticamente in inglese, italiano e francese."
+mani-verdi = "Sito vetrina per un giardiniere professionista vicino a Bologna."
+da-miri-beautician-website = "Sito one-page per uno studio di onicotecnica a domicilio."
+thundra-cover-band = "Sito one-page per una tribute band degli AC/DC."
+bank-view = "Demo di dashboard bancaria con dati fittizi: il mio primo progetto Angular."
+rusty-tictactoe = "Tris a due giocatori da terminale."
+
+[stack]
+title = "Stack"
+core = "Ogni giorno"
+data = "Data engineering"
+
+[activity]
+title = "Attività"

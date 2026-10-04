@@ -1,0 +1,58 @@
+location = "Bologna, Italien"
+website_label = "Portfolio"
+website_path = ""
+footer = "Immer offen für Gespräche über Rust, Datensysteme und gut durchdachte Software."
+
+[about]
+title = "Über mich"
+body = """
+Ich bin Softwareentwickler aus Bologna. Seit {{ since_year }} entwickle ich bei **{{ company }}** Backend- und Full-Stack-Software.
+Mein tägliches Werkzeug ist **Rust**: Mir sind Korrektheit, explizite Datenmodelle und Code wichtig, dessen Wartung langweilig ist. Seit Kurzem baue ich auch Oberflächen mit **Angular**.
+
+Ich orientiere mich in Richtung **Data Engineering**: Ingestion, Datenmodellierung, Orchestrierung und die Infrastruktur, die aus Rohdaten etwas Verlässliches macht.
+In [aria-er](https://github.com/{{ github_user }}/aria-er) setze ich das von Anfang bis Ende in die Praxis um.
+
+Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Universität Bologna."""
+
+[now]
+title = "Aktuell"
+items = [
+  "Produktivsoftware in Rust bei {{ company }}",
+  "Frontends mit Angular",
+  "**aria-er**: Rust-Ingestion, dbt und Dagster auf offenen Luftqualitätsdaten",
+  "**your-finance**: eine App für persönliche Finanzen in Rust und PostgreSQL",
+]
+
+[next]
+title = "Als Nächstes"
+items = [
+  "Streamlit-Dashboard und vollständiges GCP-Deployment für aria-er",
+  "Fortgeschrittenes SQL und Datenmodellierung",
+  "Cloud-Data-Warehouses und Infrastructure as Code",
+]
+
+[projects]
+title = "Projekte"
+col_project = "Projekt"
+col_description = "Beschreibung"
+col_stack = "Stack"
+private = "privat"
+
+[projects.descriptions]
+aria-er = "End-to-End-Datenplattform zur Luftqualität in der Emilia-Romagna (offene ARPAE-Daten): partitioniertes Parquet, getestete dbt-Modelle, tägliche Dagster-Partitionen."
+your-finance = "App für persönliche Finanzen: Rust-API, PostgreSQL, Mobile- und Desktop-Clients."
+dump-backup-sorter = "Sortiert ein Handy-Backup in ein datiertes, deduplikiertes Medienarchiv und ein Backup für alles Übrige."
+portfolio = "Meine persönliche Website, statisch generiert auf Englisch, Italienisch und Französisch."
+mani-verdi = "Präsentationswebsite für einen Gärtner bei Bologna."
+da-miri-beautician-website = "One-Page-Website für ein Nagelstudio im eigenen Zuhause."
+thundra-cover-band = "One-Page-Website für eine AC/DC-Tributeband."
+bank-view = "Demo eines Banking-Dashboards mit Testdaten: mein erstes Angular-Projekt."
+rusty-tictactoe = "Tic Tac Toe für zwei Spieler im Terminal."
+
+[stack]
+title = "Stack"
+core = "Täglich"
+data = "Data Engineering"
+
+[activity]
+title = "Aktivität"
