@@ -1,0 +1,62 @@
+location = "Bologna, Italy"
+website_label = "Portfolio"
+website_path = ""
+footer = "Open to conversations about Rust, data systems and well-designed software."
+
+[about]
+title = "About"
+body = """
+I'm a software developer from Bologna. Since {{ since_year }} I've been building backend and full-stack software at **{{ company }}**,
+where my daily tool is **Rust**: I care about correctness, explicit data models and code that is boring to maintain. Lately I'm also building UIs in **Angular**.
+
+I'm moving toward **Data Engineering**: ingestion, data modeling, orchestration and the infrastructure that turns raw data into something reliable.
+[aria-er](https://github.com/{{ github_user }}/aria-er) is where I put it into practice, end to end.
+
+In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at the University of Bologna."""
+
+[now]
+title = "Now"
+items = [
+  "Production software in Rust at {{ company }}",
+  "Front-ends with Angular",
+  "**aria-er**: Rust ingestion, dbt and Dagster on open air-quality data",
+  "**your-finance**: a personal finance app in Rust and PostgreSQL",
+]
+
+[next]
+title = "Next"
+items = [
+  "Streamlit dashboard and full GCP deployment for aria-er",
+  "Advanced SQL and data modeling",
+  "Cloud data warehouses and infrastructure as code",
+]
+
+[featured]
+title = "Featured project"
+body = "**aria-er** turns fragmented air-quality measurements from the Emilia-Romagna environmental agency into a tested, unified dataset: legal limit exceedances, pollutant trends, weather correlation."
+
+[projects]
+title = "More projects"
+col_project = "Project"
+col_description = "Description"
+col_stack = "Stack"
+private = "private"
+
+[projects.descriptions]
+your-finance = "Personal finance app: Rust API, PostgreSQL, mobile and desktop clients."
+dump-backup-sorter = "Sorts a phone dump into a dated, deduplicated media vault and a backup of everything else."
+portfolio = "My personal website, statically generated in English, Italian and French."
+mani-verdi = "Showcase website for a professional gardener near Bologna."
+da-miri-beautician-website = "One-page website for a home nail studio."
+thundra-cover-band = "Single-page website for an AC/DC tribute band."
+bank-view = "Banking dashboard demo with mock data: my first Angular project."
+rusty-tictactoe = "Two-player Tic Tac Toe for the terminal."
+
+[stack]
+title = "Stack"
+backend = "Backend"
+data = "Data engineering"
+frontend = "Frontend"
+
+[activity]
+title = "Activity"

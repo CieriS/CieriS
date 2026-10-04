@@ -1,0 +1,174 @@
+# Values shared by every README. Change them here once; run `python3 scripts/build_readme.py`.
+# Text that needs translating lives in locales/<code>.toml instead.
+
+name = "Samuele Cieri"
+tagline = "Software Developer · Rust · Data Engineering"
+motto = "cargo build --release my-career · warnings: 47 · errors: 0 (so far)"
+github_user = "CieriS"
+company = "TAS S.p.A."
+since_year = 2022
+
+[links]
+website = "https://cierisamuele.vercel.app"
+linkedin = "https://www.linkedin.com/in/samuelecieri"
+instagram = "https://www.instagram.com/samuelecierii"
+
+[featured]
+repo = "aria-er"
+pipeline = "ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster"
+
+[header]
+gradient = "0:0f2027,50:203a43,100:2c5364"
+footer_gradient = "0:2c5364,50:203a43,100:0f2027"
+font_color = "e6edf3"
+
+# First language = reference for validation and the default README.md shown on the profile.
+# stats_locale: language code understood by github-readme-stats.
+[[languages]]
+code = "en"
+label = "English"
+flag = "🇬🇧"
+file = "README.md"
+stats_locale = "en"
+
+[[languages]]
+code = "it"
+label = "Italiano"
+flag = "🇮🇹"
+file = "README.it.md"
+stats_locale = "it"
+
+[[languages]]
+code = "fr"
+label = "Français"
+flag = "🇫🇷"
+file = "README.fr.md"
+stats_locale = "fr"
+
+[[languages]]
+code = "de"
+label = "Deutsch"
+flag = "🇩🇪"
+file = "README.de.md"
+stats_locale = "de"
+
+# Stack badges. group = the template block they appear in ({{ block.stack.<group> }}).
+# logo = Simple Icons slug. Rule: list only what a repository demonstrates.
+[[stack]]
+name = "Rust"
+color = "000000"
+logo = "rust"
+group = "backend"
+
+[[stack]]
+name = "PostgreSQL"
+color = "336791"
+logo = "postgresql"
+group = "backend"
+
+[[stack]]
+name = "Python"
+color = "3776AB"
+logo = "python"
+group = "data"
+
+[[stack]]
+name = "dbt"
+color = "FF694B"
+logo = "dbt"
+group = "data"
+
+[[stack]]
+name = "Dagster"
+color = "4F43DD"
+logo = "dagster"
+group = "data"
+
+[[stack]]
+name = "DuckDB"
+color = "FFF000"
+logo = "duckdb"
+logo_color = "black"
+group = "data"
+
+[[stack]]
+name = "BigQuery"
+color = "669DF6"
+logo = "googlebigquery"
+group = "data"
+
+[[stack]]
+name = "Terraform"
+color = "844FBA"
+logo = "terraform"
+group = "data"
+
+[[stack]]
+name = "Angular"
+color = "DD0031"
+logo = "angular"
+group = "frontend"
+
+[[stack]]
+name = "TypeScript"
+color = "3178C6"
+logo = "typescript"
+group = "frontend"
+
+[[stack]]
+name = "React"
+color = "20232A"
+logo = "react"
+group = "frontend"
+
+[[stack]]
+name = "Next.js"
+color = "000000"
+logo = "nextdotjs"
+group = "frontend"
+
+[[stack]]
+name = "Astro"
+color = "BC52EE"
+logo = "astro"
+group = "frontend"
+
+[[stack]]
+name = "Tailwind CSS"
+color = "06B6D4"
+logo = "tailwindcss"
+group = "frontend"
+
+# "More projects" table, in display order (the featured repo is not repeated here). key = repository name; descriptions are per language.
+[[projects]]
+key = "your-finance"
+stack = "Rust · Axum · PostgreSQL · Expo"
+private = true
+
+[[projects]]
+key = "portfolio"
+stack = "Next.js · TypeScript · three.js"
+
+[[projects]]
+key = "rusty-tictactoe"
+stack = "Rust"
+
+[[projects]]
+key = "dump-backup-sorter"
+stack = "Python"
+
+[[projects]]
+key = "mani-verdi"
+stack = "Astro · Tailwind"
+
+[[projects]]
+key = "da-miri-beautician-website"
+stack = "Next.js · TypeScript"
+
+[[projects]]
+key = "thundra-cover-band"
+stack = "React · Vite"
+
+[[projects]]
+key = "bank-view"
+stack = "Angular · Nx"

@@ -1,0 +1,62 @@
+location = "Bologne, Italie"
+website_label = "Portfolio"
+website_path = "/fr"
+footer = "Toujours partant pour discuter de Rust, de systèmes de données et de logiciels bien conçus."
+
+[about]
+title = "À propos"
+body = """
+Je suis développeur logiciel à Bologne. Depuis {{ since_year }}, je conçois des logiciels backend et full-stack chez **{{ company }}**,
+où mon outil quotidien est **Rust** : je tiens à la justesse du code, à des modèles de données explicites et à un code ennuyeux à maintenir. Depuis peu, je développe aussi des interfaces avec **Angular**.
+
+Je m'oriente vers le **Data Engineering** : ingestion, modélisation des données, orchestration et l'infrastructure qui transforme des données brutes en quelque chose de fiable.
+[aria-er](https://github.com/{{ github_user }}/aria-er) est le projet où je le mets en pratique, de bout en bout.
+
+En parallèle, je prépare à temps partiel une **licence en ingénierie informatique** à l'Université de Bologne."""
+
+[now]
+title = "En ce moment"
+items = [
+  "Logiciels en production en Rust chez {{ company }}",
+  "Front-ends avec Angular",
+  "**aria-er** : ingestion en Rust, dbt et Dagster sur des données ouvertes de qualité de l'air",
+  "**your-finance** : une application de finances personnelles en Rust et PostgreSQL",
+]
+
+[next]
+title = "Prochaines étapes"
+items = [
+  "Tableau de bord Streamlit et déploiement complet sur GCP pour aria-er",
+  "SQL avancé et modélisation des données",
+  "Entrepôts de données cloud et infrastructure as code",
+]
+
+[featured]
+title = "Projet phare"
+body = "**aria-er** transforme les mesures fragmentées de qualité de l'air de l'agence environnementale d'Émilie-Romagne en un jeu de données unifié et testé : dépassements des seuils légaux, tendances des polluants, corrélation avec la météo."
+
+[projects]
+title = "Autres projets"
+col_project = "Projet"
+col_description = "Description"
+col_stack = "Stack"
+private = "privé"
+
+[projects.descriptions]
+your-finance = "Application de finances personnelles : API en Rust, PostgreSQL, clients mobile et desktop."
+dump-backup-sorter = "Trie la sauvegarde d'un téléphone en une archive de médias datée et dédupliquée, et une sauvegarde de tout le reste."
+portfolio = "Mon site personnel, généré statiquement en anglais, italien et français."
+mani-verdi = "Site vitrine pour un jardinier professionnel près de Bologne."
+da-miri-beautician-website = "Site one-page pour un studio de prothésie ongulaire à domicile."
+thundra-cover-band = "Site one-page pour un groupe hommage à AC/DC."
+bank-view = "Démo de tableau de bord bancaire avec des données fictives : mon premier projet Angular."
+rusty-tictactoe = "Morpion à deux joueurs dans le terminal."
+
+[stack]
+title = "Stack"
+backend = "Backend"
+data = "Data engineering"
+frontend = "Frontend"
+
+[activity]
+title = "Activité"
