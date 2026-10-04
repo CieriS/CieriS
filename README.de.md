@@ -5,10 +5,11 @@
 
 [🇬🇧 English](./README.md) · [🇮🇹 Italiano](./README.it.md) · [🇫🇷 Français](./README.fr.md) · **🇩🇪 Deutsch**
 
-<a href="https://www.linkedin.com/in/samuelecieri"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/samuelecierii"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
-<a href="https://cierisamuele.vercel.app"><img src="https://img.shields.io/badge/Portfolio-111827?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<img src="https://img.shields.io/badge/Bologna%2C_Italien-1f2937?style=flat-square&logo=googlemaps&logoColor=white" alt="Bologna, Italien"/>
+**Kontakt**
+
+<a href="https://www.linkedin.com/in/samuelecieri"><img src="https://skillicons.dev/icons?i=linkedin" height="40" alt="LinkedIn"/></a>
+<a href="https://www.instagram.com/samuelecierii"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram"/></a>
+<a href="https://cierisamuele.vercel.app"><img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Portfolio"/></a>
 
 <sub><code>cargo build --release my-career · warnings: 47 · errors: 0 (so far)</code></sub>
 
@@ -25,6 +26,9 @@ Ich orientiere mich in Richtung **Data Engineering**: Ingestion, Datenmodellieru
 In [aria-er](https://github.com/CieriS/aria-er) setze ich das von Anfang bis Ende in die Praxis um.
 
 Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Universität Bologna.
+
+<details>
+<summary><b>🔧 Aktuell · 📈 Als Nächstes</b></summary>
 
 <table>
 <tr>
@@ -50,6 +54,8 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 </tr>
 </table>
 
+</details>
+
 ### Vorgestelltes Projekt
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=de" alt="aria-er"/></a>
@@ -58,7 +64,8 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
 
-### Weitere Projekte
+<details>
+<summary><b>📂 Weitere Projekte</b></summary>
 
 | Projekt | Beschreibung | Stack |
 |---|---|---|
@@ -71,7 +78,10 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 | [**thundra-cover-band**](https://github.com/CieriS/thundra-cover-band) | One-Page-Website für eine AC/DC-Tributeband. | React · Vite |
 | [**bank-view**](https://github.com/CieriS/bank-view) | Demo eines Banking-Dashboards mit Testdaten: mein erstes Angular-Projekt. | Angular · Nx |
 
-### Stack
+</details>
+
+<details>
+<summary><b>🧰 Stack</b></summary>
 
 <sub>Backend</sub><br/>
 <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
@@ -93,12 +103,17 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 <img src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" alt="Astro"/>
 <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
 
-### Aktivität
+</details>
+
+<details>
+<summary><b>📊 Aktivität</b></summary>
 
 <div align="center">
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&locale=de" alt="GitHub stats"/>
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&theme=github_dark&hide_border=true&locale=de" alt="Top languages"/>
 </div>
+
+</details>
 
 ---
 

@@ -1,5 +1,4 @@
-location = "Bologna"
-website_label = "Portfolio"
+connect = "Contattami"
 website_path = "/it"
 footer = "Sempre aperto a una chiacchierata su Rust, sistemi di dati e software ben progettato."
 

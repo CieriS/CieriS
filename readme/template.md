@@ -4,10 +4,11 @@
 
 {{ block.languages }}
 
-<a href="{{ links.linkedin }}"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="{{ links.instagram }}"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
-<a href="{{ links.website }}{{ t.website_path }}"><img src="https://img.shields.io/badge/{{ t.website_label }}-111827?style=flat-square&logo=vercel&logoColor=white" alt="{{ t.website_label }}"/></a>
-{{ block.location_badge }}
+**{{ t.connect }}**
+
+<a href="{{ links.linkedin }}"><img src="https://skillicons.dev/icons?i=linkedin" height="40" alt="LinkedIn"/></a>
+<a href="{{ links.instagram }}"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram"/></a>
+<a href="{{ links.website }}{{ t.website_path }}"><img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Portfolio"/></a>
 
 <sub><code>{{ motto }}</code></sub>
 
@@ -18,6 +19,9 @@
 ### {{ t.about.title }}
 
 {{ t.about.body }}
+
+<details>
+<summary><b>🔧 {{ t.now.title }} · 📈 {{ t.next.title }}</b></summary>
 
 <table>
 <tr>
@@ -38,6 +42,8 @@
 </tr>
 </table>
 
+</details>
+
 ### {{ t.featured.title }}
 
 <a href="https://github.com/{{ github_user }}/{{ featured.repo }}"><img src="https://github-readme-stats.vercel.app/api/pin/?username={{ github_user }}&repo={{ featured.repo }}&theme=github_dark&hide_border=true&locale={{ lang.stats_locale }}" alt="{{ featured.repo }}"/></a>
@@ -46,11 +52,15 @@
 
 <sub><code>{{ featured.pipeline }}</code></sub>
 
-### {{ t.projects.title }}
+<details>
+<summary><b>📂 {{ t.projects.title }}</b></summary>
 
 {{ block.projects }}
 
-### {{ t.stack.title }}
+</details>
+
+<details>
+<summary><b>🧰 {{ t.stack.title }}</b></summary>
 
 <sub>{{ t.stack.backend }}</sub><br/>
 {{ block.stack.backend }}
@@ -61,12 +71,17 @@
 <sub>{{ t.stack.frontend }}</sub><br/>
 {{ block.stack.frontend }}
 
-### {{ t.activity.title }}
+</details>
+
+<details>
+<summary><b>📊 {{ t.activity.title }}</b></summary>
 
 <div align="center">
 <img height="165" src="https://github-readme-stats.vercel.app/api?username={{ github_user }}&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&locale={{ lang.stats_locale }}" alt="GitHub stats"/>
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username={{ github_user }}&layout=compact&theme=github_dark&hide_border=true&locale={{ lang.stats_locale }}" alt="Top languages"/>
 </div>
+
+</details>
 
 ---
 

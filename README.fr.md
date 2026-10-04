@@ -5,10 +5,11 @@
 
 [🇬🇧 English](./README.md) · [🇮🇹 Italiano](./README.it.md) · **🇫🇷 Français** · [🇩🇪 Deutsch](./README.de.md)
 
-<a href="https://www.linkedin.com/in/samuelecieri"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/samuelecierii"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
-<a href="https://cierisamuele.vercel.app/fr"><img src="https://img.shields.io/badge/Portfolio-111827?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<img src="https://img.shields.io/badge/Bologne%2C_Italie-1f2937?style=flat-square&logo=googlemaps&logoColor=white" alt="Bologne, Italie"/>
+**Me contacter**
+
+<a href="https://www.linkedin.com/in/samuelecieri"><img src="https://skillicons.dev/icons?i=linkedin" height="40" alt="LinkedIn"/></a>
+<a href="https://www.instagram.com/samuelecierii"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram"/></a>
+<a href="https://cierisamuele.vercel.app/fr"><img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Portfolio"/></a>
 
 <sub><code>cargo build --release my-career · warnings: 47 · errors: 0 (so far)</code></sub>
 
@@ -25,6 +26,9 @@ Je m'oriente vers le **Data Engineering** : ingestion, modélisation des donnée
 [aria-er](https://github.com/CieriS/aria-er) est le projet où je le mets en pratique, de bout en bout.
 
 En parallèle, je prépare à temps partiel une **licence en ingénierie informatique** à l'Université de Bologne.
+
+<details>
+<summary><b>🔧 En ce moment · 📈 Prochaines étapes</b></summary>
 
 <table>
 <tr>
@@ -50,6 +54,8 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 </tr>
 </table>
 
+</details>
+
 ### Projet phare
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=fr" alt="aria-er"/></a>
@@ -58,7 +64,8 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
 
-### Autres projets
+<details>
+<summary><b>📂 Autres projets</b></summary>
 
 | Projet | Description | Stack |
 |---|---|---|
@@ -71,7 +78,10 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 | [**thundra-cover-band**](https://github.com/CieriS/thundra-cover-band) | Site one-page pour un groupe hommage à AC/DC. | React · Vite |
 | [**bank-view**](https://github.com/CieriS/bank-view) | Démo de tableau de bord bancaire avec des données fictives : mon premier projet Angular. | Angular · Nx |
 
-### Stack
+</details>
+
+<details>
+<summary><b>🧰 Stack</b></summary>
 
 <sub>Backend</sub><br/>
 <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
@@ -93,12 +103,17 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 <img src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" alt="Astro"/>
 <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
 
-### Activité
+</details>
+
+<details>
+<summary><b>📊 Activité</b></summary>
 
 <div align="center">
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&locale=fr" alt="GitHub stats"/>
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&theme=github_dark&hide_border=true&locale=fr" alt="Top languages"/>
 </div>
+
+</details>
 
 ---
 

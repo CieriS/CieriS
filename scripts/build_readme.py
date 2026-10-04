@@ -136,7 +136,6 @@ def build_context(shared: dict[str, Any], locale: dict[str, Any], lang: dict[str
         "block": {
             "header": header_image(shared),
             "languages": language_switcher(shared["languages"], lang["code"]),
-            "location_badge": badge(locale["location"], "1f2937", "googlemaps", "flat-square"),
             "stack": {group: stack_badges(shared["stack"], group) for group in groups},
             "projects": projects_table(shared, locale),
         },
