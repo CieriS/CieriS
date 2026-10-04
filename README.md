@@ -27,6 +27,9 @@ I'm moving toward **Data Engineering**: ingestion, data modeling, orchestration 
 
 In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at the University of Bologna.
 
+<details>
+<summary><b>🔧 Now · 📈 Next</b></summary>
+
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -51,6 +54,8 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 </tr>
 </table>
 
+</details>
+
 ### Featured project
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=en" alt="aria-er"/></a>
@@ -59,7 +64,8 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
 
-### More projects
+<details>
+<summary><b>📂 More projects</b></summary>
 
 | Project | Description | Stack |
 |---|---|---|
@@ -72,7 +78,10 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 | [**thundra-cover-band**](https://github.com/CieriS/thundra-cover-band) | Single-page website for an AC/DC tribute band. | React · Vite |
 | [**bank-view**](https://github.com/CieriS/bank-view) | Banking dashboard demo with mock data: my first Angular project. | Angular · Nx |
 
-### Stack
+</details>
+
+<details>
+<summary><b>🧰 Stack</b></summary>
 
 <sub>Backend</sub><br/>
 <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
@@ -94,12 +103,17 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 <img src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" alt="Astro"/>
 <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
 
-### Activity
+</details>
+
+<details>
+<summary><b>📊 Activity</b></summary>
 
 <div align="center">
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&locale=en" alt="GitHub stats"/>
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&theme=github_dark&hide_border=true&locale=en" alt="Top languages"/>
 </div>
+
+</details>
 
 ---
 

@@ -27,6 +27,9 @@ Mi sto spostando verso il **Data Engineering**: ingestione, modellazione dei dat
 
 In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Università di Bologna.
 
+<details>
+<summary><b>🔧 Ora · 📈 Prossimi passi</b></summary>
+
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -51,6 +54,8 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 </tr>
 </table>
 
+</details>
+
 ### Progetto in evidenza
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=it" alt="aria-er"/></a>
@@ -59,7 +64,8 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
 
-### Altri progetti
+<details>
+<summary><b>📂 Altri progetti</b></summary>
 
 | Progetto | Descrizione | Stack |
 |---|---|---|
@@ -72,7 +78,10 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 | [**thundra-cover-band**](https://github.com/CieriS/thundra-cover-band) | Sito one-page per una tribute band degli AC/DC. | React · Vite |
 | [**bank-view**](https://github.com/CieriS/bank-view) | Demo di dashboard bancaria con dati fittizi: il mio primo progetto Angular. | Angular · Nx |
 
-### Stack
+</details>
+
+<details>
+<summary><b>🧰 Stack</b></summary>
 
 <sub>Backend</sub><br/>
 <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
@@ -94,12 +103,17 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 <img src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" alt="Astro"/>
 <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
 
-### Attività
+</details>
+
+<details>
+<summary><b>📊 Attività</b></summary>
 
 <div align="center">
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&locale=it" alt="GitHub stats"/>
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&theme=github_dark&hide_border=true&locale=it" alt="Top languages"/>
 </div>
+
+</details>
 
 ---
 
