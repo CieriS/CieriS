@@ -56,13 +56,16 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 
 </details>
 
-### Featured project
+<details>
+<summary><b>⭐ Featured project</b></summary>
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=en" alt="aria-er"/></a>
 
 **aria-er** turns fragmented air-quality measurements from the Emilia-Romagna environmental agency into a tested, unified dataset: legal limit exceedances, pollutant trends, weather correlation.
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
+
+</details>
 
 <details>
 <summary><b>📂 More projects</b></summary>
@@ -105,7 +108,7 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 
 </details>
 
-<details>
+<details open>
 <summary><b>📊 Activity</b></summary>
 
 <div align="center">

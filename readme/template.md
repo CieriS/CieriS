@@ -44,13 +44,16 @@
 
 </details>
 
-### {{ t.featured.title }}
+<details>
+<summary><b>⭐ {{ t.featured.title }}</b></summary>
 
 <a href="https://github.com/{{ github_user }}/{{ featured.repo }}"><img src="https://github-readme-stats.vercel.app/api/pin/?username={{ github_user }}&repo={{ featured.repo }}&theme=github_dark&hide_border=true&locale={{ lang.stats_locale }}" alt="{{ featured.repo }}"/></a>
 
 {{ t.featured.body }}
 
 <sub><code>{{ featured.pipeline }}</code></sub>
+
+</details>
 
 <details>
 <summary><b>📂 {{ t.projects.title }}</b></summary>
@@ -73,7 +76,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary><b>📊 {{ t.activity.title }}</b></summary>
 
 <div align="center">

@@ -56,13 +56,16 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 
 </details>
 
-### Progetto in evidenza
+<details>
+<summary><b>⭐ Progetto in evidenza</b></summary>
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=it" alt="aria-er"/></a>
 
 **aria-er** trasforma le misure frammentate della qualità dell'aria di ARPAE Emilia-Romagna in un dataset unico e testato: superamenti dei limiti di legge, andamento degli inquinanti, correlazione con il meteo.
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
+
+</details>
 
 <details>
 <summary><b>📂 Altri progetti</b></summary>
@@ -105,7 +108,7 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 
 </details>
 
-<details>
+<details open>
 <summary><b>📊 Attività</b></summary>
 
 <div align="center">
