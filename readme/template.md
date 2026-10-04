@@ -38,17 +38,28 @@
 </tr>
 </table>
 
+### {{ t.featured.title }}
+
+<a href="https://github.com/{{ github_user }}/{{ featured.repo }}"><img src="https://github-readme-stats.vercel.app/api/pin/?username={{ github_user }}&repo={{ featured.repo }}&theme=github_dark&hide_border=true&locale={{ lang.stats_locale }}" alt="{{ featured.repo }}"/></a>
+
+{{ t.featured.body }}
+
+<sub><code>{{ featured.pipeline }}</code></sub>
+
 ### {{ t.projects.title }}
 
 {{ block.projects }}
 
 ### {{ t.stack.title }}
 
-<sub>{{ t.stack.core }}</sub><br/>
-{{ block.stack.core }}
+<sub>{{ t.stack.backend }}</sub><br/>
+{{ block.stack.backend }}
 
 <sub>{{ t.stack.data }}</sub><br/>
 {{ block.stack.data }}
+
+<sub>{{ t.stack.frontend }}</sub><br/>
+{{ block.stack.frontend }}
 
 ### {{ t.activity.title }}
 

@@ -31,15 +31,18 @@ items = [
   "Data warehouse in cloud e infrastructure as code",
 ]
 
+[featured]
+title = "Progetto in evidenza"
+body = "**aria-er** trasforma le misure frammentate della qualità dell'aria di ARPAE Emilia-Romagna in un dataset unico e testato: superamenti dei limiti di legge, andamento degli inquinanti, correlazione con il meteo."
+
 [projects]
-title = "Progetti"
+title = "Altri progetti"
 col_project = "Progetto"
 col_description = "Descrizione"
 col_stack = "Stack"
 private = "privato"
 
 [projects.descriptions]
-aria-er = "Piattaforma dati end-to-end sulla qualità dell'aria in Emilia-Romagna (open data ARPAE): Parquet partizionato, modelli dbt testati, partizioni giornaliere in Dagster."
 your-finance = "App di finanza personale: API in Rust, PostgreSQL, client mobile e desktop."
 dump-backup-sorter = "Smista il dump del telefono in un archivio media datato e senza duplicati e in un backup di tutto il resto."
 portfolio = "Il mio sito personale, generato staticamente in inglese, italiano e francese."
@@ -51,8 +54,9 @@ rusty-tictactoe = "Tris a due giocatori da terminale."
 
 [stack]
 title = "Stack"
-core = "Ogni giorno"
+backend = "Backend"
 data = "Data engineering"
+frontend = "Frontend"
 
 [activity]
 title = "Attività"

@@ -31,15 +31,18 @@ items = [
   "Cloud data warehouses and infrastructure as code",
 ]
 
+[featured]
+title = "Featured project"
+body = "**aria-er** turns fragmented air-quality measurements from the Emilia-Romagna environmental agency into a tested, unified dataset: legal limit exceedances, pollutant trends, weather correlation."
+
 [projects]
-title = "Projects"
+title = "More projects"
 col_project = "Project"
 col_description = "Description"
 col_stack = "Stack"
 private = "private"
 
 [projects.descriptions]
-aria-er = "End-to-end data platform for Emilia-Romagna air quality (ARPAE open data): partitioned Parquet, tested dbt models, daily Dagster partitions."
 your-finance = "Personal finance app: Rust API, PostgreSQL, mobile and desktop clients."
 dump-backup-sorter = "Sorts a phone dump into a dated, deduplicated media vault and a backup of everything else."
 portfolio = "My personal website, statically generated in English, Italian and French."
@@ -51,8 +54,9 @@ rusty-tictactoe = "Two-player Tic Tac Toe for the terminal."
 
 [stack]
 title = "Stack"
-core = "Every day"
+backend = "Backend"
 data = "Data engineering"
+frontend = "Frontend"
 
 [activity]
 title = "Activity"

@@ -50,29 +50,32 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 </tr>
 </table>
 
-### Progetti
+### Progetto in evidenza
+
+<a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=it" alt="aria-er"/></a>
+
+**aria-er** trasforma le misure frammentate della qualità dell'aria di ARPAE Emilia-Romagna in un dataset unico e testato: superamenti dei limiti di legge, andamento degli inquinanti, correlazione con il meteo.
+
+<sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
+
+### Altri progetti
 
 | Progetto | Descrizione | Stack |
 |---|---|---|
-| [**aria-er**](https://github.com/CieriS/aria-er) | Piattaforma dati end-to-end sulla qualità dell'aria in Emilia-Romagna (open data ARPAE): Parquet partizionato, modelli dbt testati, partizioni giornaliere in Dagster. | Rust · dbt · Dagster · BigQuery |
 | **your-finance** <sub>privato</sub> | App di finanza personale: API in Rust, PostgreSQL, client mobile e desktop. | Rust · Axum · PostgreSQL · Expo |
-| [**dump-backup-sorter**](https://github.com/CieriS/dump-backup-sorter) | Smista il dump del telefono in un archivio media datato e senza duplicati e in un backup di tutto il resto. | Python |
 | [**portfolio**](https://github.com/CieriS/portfolio) | Il mio sito personale, generato staticamente in inglese, italiano e francese. | Next.js · TypeScript · three.js |
+| [**rusty-tictactoe**](https://github.com/CieriS/rusty-tictactoe) | Tris a due giocatori da terminale. | Rust |
+| [**dump-backup-sorter**](https://github.com/CieriS/dump-backup-sorter) | Smista il dump del telefono in un archivio media datato e senza duplicati e in un backup di tutto il resto. | Python |
 | [**mani-verdi**](https://github.com/CieriS/mani-verdi) | Sito vetrina per un giardiniere professionista vicino a Bologna. | Astro · Tailwind |
 | [**da-miri-beautician-website**](https://github.com/CieriS/da-miri-beautician-website) | Sito one-page per uno studio di onicotecnica a domicilio. | Next.js · TypeScript |
 | [**thundra-cover-band**](https://github.com/CieriS/thundra-cover-band) | Sito one-page per una tribute band degli AC/DC. | React · Vite |
 | [**bank-view**](https://github.com/CieriS/bank-view) | Demo di dashboard bancaria con dati fittizi: il mio primo progetto Angular. | Angular · Nx |
-| [**rusty-tictactoe**](https://github.com/CieriS/rusty-tictactoe) | Tris a due giocatori da terminale. | Rust |
 
 ### Stack
 
-<sub>Ogni giorno</sub><br/>
+<sub>Backend</sub><br/>
 <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
-<img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
 <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
 
 <sub>Data engineering</sub><br/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
@@ -81,6 +84,14 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 <img src="https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black" alt="DuckDB"/>
 <img src="https://img.shields.io/badge/BigQuery-669DF6?style=for-the-badge&logo=googlebigquery&logoColor=white" alt="BigQuery"/>
 <img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform"/>
+
+<sub>Frontend</sub><br/>
+<img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=white" alt="React"/>
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+<img src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" alt="Astro"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
 
 ### Attività
 

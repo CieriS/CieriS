@@ -31,15 +31,18 @@ items = [
   "Entrepôts de données cloud et infrastructure as code",
 ]
 
+[featured]
+title = "Projet phare"
+body = "**aria-er** transforme les mesures fragmentées de qualité de l'air de l'agence environnementale d'Émilie-Romagne en un jeu de données unifié et testé : dépassements des seuils légaux, tendances des polluants, corrélation avec la météo."
+
 [projects]
-title = "Projets"
+title = "Autres projets"
 col_project = "Projet"
 col_description = "Description"
 col_stack = "Stack"
 private = "privé"
 
 [projects.descriptions]
-aria-er = "Plateforme de données de bout en bout sur la qualité de l'air en Émilie-Romagne (données ouvertes ARPAE) : Parquet partitionné, modèles dbt testés, partitions quotidiennes Dagster."
 your-finance = "Application de finances personnelles : API en Rust, PostgreSQL, clients mobile et desktop."
 dump-backup-sorter = "Trie la sauvegarde d'un téléphone en une archive de médias datée et dédupliquée, et une sauvegarde de tout le reste."
 portfolio = "Mon site personnel, généré statiquement en anglais, italien et français."
@@ -51,8 +54,9 @@ rusty-tictactoe = "Morpion à deux joueurs dans le terminal."
 
 [stack]
 title = "Stack"
-core = "Au quotidien"
+backend = "Backend"
 data = "Data engineering"
+frontend = "Frontend"
 
 [activity]
 title = "Activité"

@@ -13,6 +13,10 @@ website = "https://cierisamuele.vercel.app"
 linkedin = "https://www.linkedin.com/in/samuelecieri"
 instagram = "https://www.instagram.com/samuelecierii"
 
+[featured]
+repo = "aria-er"
+pipeline = "ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster"
+
 [header]
 gradient = "0:0f2027,50:203a43,100:2c5364"
 footer_gradient = "0:2c5364,50:203a43,100:0f2027"
@@ -49,42 +53,18 @@ file = "README.de.md"
 stats_locale = "de"
 
 # Stack badges. group = the template block they appear in ({{ block.stack.<group> }}).
-# logo = Simple Icons slug.
+# logo = Simple Icons slug. Rule: list only what a repository demonstrates.
 [[stack]]
 name = "Rust"
 color = "000000"
 logo = "rust"
-group = "core"
-
-[[stack]]
-name = "Angular"
-color = "DD0031"
-logo = "angular"
-group = "core"
-
-[[stack]]
-name = "TypeScript"
-color = "3178C6"
-logo = "typescript"
-group = "core"
+group = "backend"
 
 [[stack]]
 name = "PostgreSQL"
 color = "336791"
 logo = "postgresql"
-group = "core"
-
-[[stack]]
-name = "Docker"
-color = "2496ED"
-logo = "docker"
-group = "core"
-
-[[stack]]
-name = "Git"
-color = "F05032"
-logo = "git"
-group = "core"
+group = "backend"
 
 [[stack]]
 name = "Python"
@@ -123,23 +103,59 @@ color = "844FBA"
 logo = "terraform"
 group = "data"
 
-# Projects table, in display order. key = repository name; descriptions are per language.
-[[projects]]
-key = "aria-er"
-stack = "Rust · dbt · Dagster · BigQuery"
+[[stack]]
+name = "Angular"
+color = "DD0031"
+logo = "angular"
+group = "frontend"
 
+[[stack]]
+name = "TypeScript"
+color = "3178C6"
+logo = "typescript"
+group = "frontend"
+
+[[stack]]
+name = "React"
+color = "20232A"
+logo = "react"
+group = "frontend"
+
+[[stack]]
+name = "Next.js"
+color = "000000"
+logo = "nextdotjs"
+group = "frontend"
+
+[[stack]]
+name = "Astro"
+color = "BC52EE"
+logo = "astro"
+group = "frontend"
+
+[[stack]]
+name = "Tailwind CSS"
+color = "06B6D4"
+logo = "tailwindcss"
+group = "frontend"
+
+# "More projects" table, in display order (the featured repo is not repeated here). key = repository name; descriptions are per language.
 [[projects]]
 key = "your-finance"
 stack = "Rust · Axum · PostgreSQL · Expo"
 private = true
 
 [[projects]]
-key = "dump-backup-sorter"
-stack = "Python"
-
-[[projects]]
 key = "portfolio"
 stack = "Next.js · TypeScript · three.js"
+
+[[projects]]
+key = "rusty-tictactoe"
+stack = "Rust"
+
+[[projects]]
+key = "dump-backup-sorter"
+stack = "Python"
 
 [[projects]]
 key = "mani-verdi"
@@ -156,7 +172,3 @@ stack = "React · Vite"
 [[projects]]
 key = "bank-view"
 stack = "Angular · Nx"
-
-[[projects]]
-key = "rusty-tictactoe"
-stack = "Rust"
