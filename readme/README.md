@@ -26,7 +26,7 @@ Python 3.11+, standard library only.
 - `{{ t.about.title }}`: a value from the current locale. Locale text may use shared placeholders
   too (`at {{ company }}`), so a fact lives in one place only.
 - `{{ lang.stats_locale }}`: a field of the current `[[languages]]` entry.
-- `{{ block.* }}`: generated Markdown/HTML: `header`, `languages` (switcher), `location_badge`,
+- `{{ block.* }}`: generated Markdown/HTML: `header`, `languages` (switcher),
   `projects` (table), `stack.<group>` (badges of that group).
 - A list of strings renders as a bullet list. An unknown placeholder is an error, not an empty string.
 

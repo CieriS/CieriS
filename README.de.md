@@ -5,10 +5,11 @@
 
 [🇬🇧 English](./README.md) · [🇮🇹 Italiano](./README.it.md) · [🇫🇷 Français](./README.fr.md) · **🇩🇪 Deutsch**
 
-<a href="https://www.linkedin.com/in/samuelecieri"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/samuelecierii"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
-<a href="https://cierisamuele.vercel.app"><img src="https://img.shields.io/badge/Portfolio-111827?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<img src="https://img.shields.io/badge/Bologna%2C_Italien-1f2937?style=flat-square&logo=googlemaps&logoColor=white" alt="Bologna, Italien"/>
+**Kontakt**
+
+<a href="https://www.linkedin.com/in/samuelecieri"><img src="https://skillicons.dev/icons?i=linkedin" height="40" alt="LinkedIn"/></a>
+<a href="https://www.instagram.com/samuelecierii"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram"/></a>
+<a href="https://cierisamuele.vercel.app"><img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Portfolio"/></a>
 
 <sub><code>cargo build --release my-career · warnings: 47 · errors: 0 (so far)</code></sub>
 
