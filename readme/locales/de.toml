@@ -44,7 +44,7 @@ private = "privat"
 [projects.descriptions]
 your-finance = "App für persönliche Finanzen: Rust-API, PostgreSQL, Mobile- und Desktop-Clients."
 dump-backup-sorter = "Sortiert ein Handy-Backup in ein datiertes, deduplikiertes Medienarchiv und ein Backup für alles Übrige."
-portfolio = "Meine persönliche Website, statisch generiert auf Englisch, Italienisch und Französisch."
+portfolio = "Meine persönliche Website, statisch generiert auf Englisch, Italienisch, Französisch und Deutsch."
 mani-verdi = "Präsentationswebsite für einen Gärtner bei Bologna."
 da-miri-beautician-website = "One-Page-Website für ein Nagelstudio im eigenen Zuhause."
 thundra-cover-band = "One-Page-Website für eine AC/DC-Tributeband."

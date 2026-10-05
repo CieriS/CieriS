@@ -73,7 +73,7 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 | Projet | Description | Stack |
 |---|---|---|
 | **your-finance** <sub>privé</sub> | Application de finances personnelles : API en Rust, PostgreSQL, clients mobile et desktop. | Rust · Axum · PostgreSQL · Expo |
-| [**portfolio**](https://github.com/CieriS/portfolio) | Mon site personnel, généré statiquement en anglais, italien et français. | Next.js · TypeScript · three.js |
+| [**portfolio**](https://github.com/CieriS/portfolio) | Mon site personnel, généré statiquement en anglais, italien, français et allemand. | Next.js · TypeScript · three.js |
 | [**rusty-tictactoe**](https://github.com/CieriS/rusty-tictactoe) | Morpion à deux joueurs dans le terminal. | Rust |
 | [**dump-backup-sorter**](https://github.com/CieriS/dump-backup-sorter) | Trie la sauvegarde d'un téléphone en une archive de médias datée et dédupliquée, et une sauvegarde de tout le reste. | Python |
 | [**mani-verdi**](https://github.com/CieriS/mani-verdi) | Site vitrine pour un jardinier professionnel près de Bologne. | Astro · Tailwind |
