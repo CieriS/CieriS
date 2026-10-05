@@ -5,10 +5,10 @@ footer = "Immer offen für Gespräche über Rust, Datensysteme und gut durchdach
 [about]
 title = "Über mich"
 body = """
-Ich bin Softwareentwickler aus Bologna. Seit {{ since_year }} entwickle ich bei **{{ company }}** Backend- und Full-Stack-Software.
-Mein tägliches Werkzeug ist **Rust**: Mir sind Korrektheit, explizite Datenmodelle und Code wichtig, dessen Wartung langweilig ist. Seit Kurzem baue ich auch Oberflächen mit **Angular**.
+Ich bin Softwareentwickler aus Bologna. Seit {{ since_year }} entwickle ich bei **{{ company }}** Frontend- und Full-Stack-Software.
+Mein tägliches Werkzeug ist **Angular**: Mir sind Korrektheit, explizite Datenmodelle und Code wichtig, dessen Wartung langweilig ist.
 
-Ich orientiere mich in Richtung **Data Engineering**: Ingestion, Datenmodellierung, Orchestrierung und die Infrastruktur, die aus Rohdaten etwas Verlässliches macht.
+Ich orientiere mich in Richtung **Data Engineering**, und dort setze ich **Rust** ein: Ingestion, Datenmodellierung, Orchestrierung und die Infrastruktur, die aus Rohdaten etwas Verlässliches macht.
 In [aria-er](https://github.com/{{ github_user }}/aria-er) setze ich das von Anfang bis Ende in die Praxis um.
 
 Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Universität Bologna."""
@@ -16,8 +16,8 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 [now]
 title = "Aktuell"
 items = [
-  "Produktivsoftware in Rust bei {{ company }}",
-  "Frontends mit Angular",
+  "Frontends mit Angular bei {{ company }}",
+  "Data-Engineering-Studium, mit Rust als Werkzeug",
   "**aria-er**: Rust-Ingestion, dbt und Dagster auf offenen Luftqualitätsdaten",
   "**your-finance**: eine App für persönliche Finanzen in Rust und PostgreSQL",
 ]

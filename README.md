@@ -19,10 +19,10 @@
 
 ### About
 
-I'm a software developer from Bologna. Since 2022 I've been building backend and full-stack software at **TAS S.p.A.**,
-where my daily tool is **Rust**: I care about correctness, explicit data models and code that is boring to maintain. Lately I'm also building UIs in **Angular**.
+I'm a software developer from Bologna. Since 2022 I've been building frontend and full-stack software at **TAS S.p.A.**,
+where my daily tool is **Angular**: I care about correctness, explicit data models and code that is boring to maintain.
 
-I'm moving toward **Data Engineering**: ingestion, data modeling, orchestration and the infrastructure that turns raw data into something reliable.
+I'm moving toward **Data Engineering**, and that is where I use **Rust**: ingestion, data modeling, orchestration and the infrastructure that turns raw data into something reliable.
 [aria-er](https://github.com/CieriS/aria-er) is where I put it into practice, end to end.
 
 In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at the University of Bologna.
@@ -36,8 +36,8 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 
 **🔧 Now**
 
-- Production software in Rust at TAS S.p.A.
-- Front-ends with Angular
+- Front-ends with Angular at TAS S.p.A.
+- Studying Data Engineering, with Rust as my tool of choice
 - **aria-er**: Rust ingestion, dbt and Dagster on open air-quality data
 - **your-finance**: a personal finance app in Rust and PostgreSQL
 
