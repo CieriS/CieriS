@@ -9,7 +9,7 @@
 
 <a href="https://www.linkedin.com/in/samuelecieri"><img src="https://skillicons.dev/icons?i=linkedin" height="40" alt="LinkedIn"/></a>
 <a href="https://www.instagram.com/samuelecierii"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram"/></a>
-<a href="https://cierisamuele.vercel.app"><img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Portfolio"/></a>
+<a href="https://cierisamuele.vercel.app"><img src="assets/logo.png" height="40" alt="Portfolio"/></a>
 
 <sub><code>cargo build --release my-career · warnings: 47 · errors: 0 (so far)</code></sub>
 
@@ -19,10 +19,10 @@
 
 ### Über mich
 
-Ich bin Softwareentwickler aus Bologna. Seit 2022 entwickle ich bei **TAS S.p.A.** Backend- und Full-Stack-Software.
-Mein tägliches Werkzeug ist **Rust**: Mir sind Korrektheit, explizite Datenmodelle und Code wichtig, dessen Wartung langweilig ist. Seit Kurzem baue ich auch Oberflächen mit **Angular**.
+Ich bin Softwareentwickler aus Bologna. Seit 2022 entwickle ich bei **TAS S.p.A.** Frontend- und Full-Stack-Software.
+Mein tägliches Werkzeug ist **Angular**: Mir sind Korrektheit, explizite Datenmodelle und Code wichtig, dessen Wartung langweilig ist.
 
-Ich orientiere mich in Richtung **Data Engineering**: Ingestion, Datenmodellierung, Orchestrierung und die Infrastruktur, die aus Rohdaten etwas Verlässliches macht.
+Ich orientiere mich in Richtung **Data Engineering**, und dort setze ich **Rust** ein: Ingestion, Datenmodellierung, Orchestrierung und die Infrastruktur, die aus Rohdaten etwas Verlässliches macht.
 In [aria-er](https://github.com/CieriS/aria-er) setze ich das von Anfang bis Ende in die Praxis um.
 
 Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Universität Bologna.
@@ -36,8 +36,8 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 
 **🔧 Aktuell**
 
-- Produktivsoftware in Rust bei TAS S.p.A.
-- Frontends mit Angular
+- Frontends mit Angular bei TAS S.p.A.
+- Data-Engineering-Studium, mit Rust als Werkzeug
 - **aria-er**: Rust-Ingestion, dbt und Dagster auf offenen Luftqualitätsdaten
 - **your-finance**: eine App für persönliche Finanzen in Rust und PostgreSQL
 

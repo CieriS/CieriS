@@ -9,7 +9,7 @@
 
 <a href="https://www.linkedin.com/in/samuelecieri"><img src="https://skillicons.dev/icons?i=linkedin" height="40" alt="LinkedIn"/></a>
 <a href="https://www.instagram.com/samuelecierii"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram"/></a>
-<a href="https://cierisamuele.vercel.app/it"><img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Portfolio"/></a>
+<a href="https://cierisamuele.vercel.app/it"><img src="assets/logo.png" height="40" alt="Portfolio"/></a>
 
 <sub><code>cargo build --release my-career · warnings: 47 · errors: 0 (so far)</code></sub>
 
@@ -19,10 +19,10 @@
 
 ### Chi sono
 
-Sono uno sviluppatore software di Bologna. Dal 2022 costruisco software backend e full-stack in **TAS S.p.A.**,
-dove il mio strumento quotidiano è **Rust**: tengo alla correttezza, a modelli dati espliciti e a codice noioso da mantenere. Da poco sviluppo anche interfacce in **Angular**.
+Sono uno sviluppatore software di Bologna. Dal 2022 costruisco software frontend e full-stack in **TAS S.p.A.**,
+dove il mio strumento quotidiano è **Angular**: tengo alla correttezza, a modelli dati espliciti e a codice noioso da mantenere.
 
-Mi sto spostando verso il **Data Engineering**: ingestione, modellazione dei dati, orchestrazione e l'infrastruttura che trasforma dati grezzi in qualcosa di affidabile.
+Mi sto spostando verso il **Data Engineering**, ed è lì che uso **Rust**: ingestione, modellazione dei dati, orchestrazione e l'infrastruttura che trasforma dati grezzi in qualcosa di affidabile.
 [aria-er](https://github.com/CieriS/aria-er) è dove lo metto in pratica, da capo a fondo.
 
 In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Università di Bologna.
@@ -36,8 +36,8 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 
 **🔧 Ora**
 
-- Software in produzione in Rust in TAS S.p.A.
-- Front-end con Angular
+- Front-end con Angular in TAS S.p.A.
+- Studio del Data Engineering, con Rust come strumento
 - **aria-er**: ingestione in Rust, dbt e Dagster su open data della qualità dell'aria
 - **your-finance**: un'app di finanza personale in Rust e PostgreSQL
 

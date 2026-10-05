@@ -9,7 +9,7 @@
 
 <a href="https://www.linkedin.com/in/samuelecieri"><img src="https://skillicons.dev/icons?i=linkedin" height="40" alt="LinkedIn"/></a>
 <a href="https://www.instagram.com/samuelecierii"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram"/></a>
-<a href="https://cierisamuele.vercel.app/fr"><img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Portfolio"/></a>
+<a href="https://cierisamuele.vercel.app/fr"><img src="assets/logo.png" height="40" alt="Portfolio"/></a>
 
 <sub><code>cargo build --release my-career · warnings: 47 · errors: 0 (so far)</code></sub>
 
@@ -19,10 +19,10 @@
 
 ### À propos
 
-Je suis développeur logiciel à Bologne. Depuis 2022, je conçois des logiciels backend et full-stack chez **TAS S.p.A.**,
-où mon outil quotidien est **Rust** : je tiens à la justesse du code, à des modèles de données explicites et à un code ennuyeux à maintenir. Depuis peu, je développe aussi des interfaces avec **Angular**.
+Je suis développeur logiciel à Bologne. Depuis 2022, je conçois des logiciels frontend et full-stack chez **TAS S.p.A.**,
+où mon outil quotidien est **Angular** : je tiens à la justesse du code, à des modèles de données explicites et à un code ennuyeux à maintenir.
 
-Je m'oriente vers le **Data Engineering** : ingestion, modélisation des données, orchestration et l'infrastructure qui transforme des données brutes en quelque chose de fiable.
+Je m'oriente vers le **Data Engineering**, et c'est là que j'utilise **Rust** : ingestion, modélisation des données, orchestration et l'infrastructure qui transforme des données brutes en quelque chose de fiable.
 [aria-er](https://github.com/CieriS/aria-er) est le projet où je le mets en pratique, de bout en bout.
 
 En parallèle, je prépare à temps partiel une **licence en ingénierie informatique** à l'Université de Bologne.
@@ -36,8 +36,8 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 
 **🔧 En ce moment**
 
-- Logiciels en production en Rust chez TAS S.p.A.
-- Front-ends avec Angular
+- Front-ends avec Angular chez TAS S.p.A.
+- Étude du Data Engineering, avec Rust comme outil
 - **aria-er** : ingestion en Rust, dbt et Dagster sur des données ouvertes de qualité de l'air
 - **your-finance** : une application de finances personnelles en Rust et PostgreSQL
 

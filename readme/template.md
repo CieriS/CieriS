@@ -8,7 +8,7 @@
 
 <a href="{{ links.linkedin }}"><img src="https://skillicons.dev/icons?i=linkedin" height="40" alt="LinkedIn"/></a>
 <a href="{{ links.instagram }}"><img src="https://skillicons.dev/icons?i=instagram" height="40" alt="Instagram"/></a>
-<a href="{{ links.website }}{{ t.website_path }}"><img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Portfolio"/></a>
+<a href="{{ links.website }}{{ t.website_path }}"><img src="assets/logo.png" height="40" alt="Portfolio"/></a>
 
 <sub><code>{{ motto }}</code></sub>
 
