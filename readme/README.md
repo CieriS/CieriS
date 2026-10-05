@@ -9,6 +9,7 @@ Do not edit them by hand; edit the files in this folder and rebuild.
 | `shared.toml` | Values common to every language: name, links, company, stack badges, project list, languages |
 | `locales/<code>.toml` | Translated text for one language (same keys in every file) |
 | `template.md` | Layout, with `{{ placeholder }}` references |
+| `../assets/` | Images served from this repository (the logo behind the portfolio link); a test fails if a README points to a file that is not there |
 
 ## Commands
 

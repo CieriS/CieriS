@@ -1,6 +1,7 @@
 """Tests for scripts/build_readme.py. Run with: python3 -m unittest discover -s tests"""
 
 import io
+import re
 import shutil
 import sys
 import tempfile
@@ -129,6 +130,16 @@ class RepositoryTests(unittest.TestCase):
             for other in names - {path.name}:
                 with self.subTest(readme=path.name, link=other):
                     self.assertIn(f"](./{other})", content)
+
+    def test_every_local_image_exists(self):
+        for path, content in br.build(ROOT).items():
+            sources = re.findall(r'<img src="([^"]+)"', content)
+            self.assertTrue(sources)
+            for src in sources:
+                if src.startswith("https://"):
+                    continue
+                with self.subTest(readme=path.name, src=src):
+                    self.assertTrue((ROOT / src).is_file(), f"{src} is not in the repository")
 
 
 class MainTests(unittest.TestCase):
