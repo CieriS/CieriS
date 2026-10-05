@@ -73,7 +73,7 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 | Project | Description | Stack |
 |---|---|---|
 | **your-finance** <sub>private</sub> | Personal finance app: Rust API, PostgreSQL, mobile and desktop clients. | Rust · Axum · PostgreSQL · Expo |
-| [**portfolio**](https://github.com/CieriS/portfolio) | My personal website, statically generated in English, Italian and French. | Next.js · TypeScript · three.js |
+| [**portfolio**](https://github.com/CieriS/portfolio) | My personal website, statically generated in English, Italian, French and German. | Next.js · TypeScript · three.js |
 | [**rusty-tictactoe**](https://github.com/CieriS/rusty-tictactoe) | Two-player Tic Tac Toe for the terminal. | Rust |
 | [**dump-backup-sorter**](https://github.com/CieriS/dump-backup-sorter) | Sorts a phone dump into a dated, deduplicated media vault and a backup of everything else. | Python |
 | [**mani-verdi**](https://github.com/CieriS/mani-verdi) | Showcase website for a professional gardener near Bologna. | Astro · Tailwind |
