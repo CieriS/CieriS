@@ -56,13 +56,16 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 
 </details>
 
-### ⭐ Projet phare
+<details>
+<summary><b>⭐ Projet phare</b></summary>
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=fr" alt="aria-er"/></a>
 
 **aria-er** transforme les mesures fragmentées de qualité de l'air de l'agence environnementale d'Émilie-Romagne en un jeu de données unifié et testé : dépassements des seuils légaux, tendances des polluants, corrélation avec la météo.
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
+
+</details>
 
 <details>
 <summary><b>📂 Autres projets</b></summary>
@@ -110,14 +113,18 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 
 </details>
 
-<details>
+<details open>
 <summary><b>📊 Activité</b></summary>
 
 <div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
+<br/><br/>
 <img src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&include_all_commits=true&locale=fr" alt="GitHub stats" width="49%"/>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=CieriS&theme=tokyonight&hide_border=true&background=0D1117&locale=fr" alt="GitHub streak" width="49%"/>
 <br/><br/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&locale=fr" alt="Top languages" width="50%"/>
+<br/><br/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
 </div>
 
 </details>
