@@ -112,8 +112,14 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 <summary><b>📊 Activity</b></summary>
 
 <div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&locale=en" alt="GitHub stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&theme=github_dark&hide_border=true&locale=en" alt="Top languages"/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
+<br/><br/>
+<img src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&include_all_commits=true&locale=en" alt="GitHub stats" width="49%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=CieriS&theme=tokyonight&hide_border=true&background=0D1117&locale=en" alt="GitHub streak" width="49%"/>
+<br/><br/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&locale=en" alt="Top languages" width="50%"/>
+<br/><br/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
 </div>
 
 </details>

@@ -80,8 +80,14 @@
 <summary><b>📊 {{ t.activity.title }}</b></summary>
 
 <div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username={{ github_user }}&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&locale={{ lang.stats_locale }}" alt="GitHub stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username={{ github_user }}&layout=compact&theme=github_dark&hide_border=true&locale={{ lang.stats_locale }}" alt="Top languages"/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
+<br/><br/>
+<img src="https://github-readme-stats.vercel.app/api?username={{ github_user }}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&include_all_commits=true&locale={{ lang.stats_locale }}" alt="GitHub stats" width="49%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user={{ github_user }}&theme=tokyonight&hide_border=true&background=0D1117&locale={{ lang.stats_locale }}" alt="GitHub streak" width="49%"/>
+<br/><br/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={{ github_user }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&locale={{ lang.stats_locale }}" alt="Top languages" width="50%"/>
+<br/><br/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
 </div>
 
 </details>
