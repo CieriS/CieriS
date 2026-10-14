@@ -44,16 +44,13 @@
 
 </details>
 
-<details>
-<summary><b>⭐ {{ t.featured.title }}</b></summary>
+### ⭐ {{ t.featured.title }}
 
 <a href="https://github.com/{{ github_user }}/{{ featured.repo }}"><img src="https://github-readme-stats.vercel.app/api/pin/?username={{ github_user }}&repo={{ featured.repo }}&theme=github_dark&hide_border=true&locale={{ lang.stats_locale }}" alt="{{ featured.repo }}"/></a>
 
 {{ t.featured.body }}
 
 <sub><code>{{ featured.pipeline }}</code></sub>
-
-</details>
 
 <details>
 <summary><b>📂 {{ t.projects.title }}</b></summary>
@@ -65,29 +62,28 @@
 <details>
 <summary><b>🧰 {{ t.stack.title }}</b></summary>
 
+<sub>{{ t.stack.data }}</sub><br/>
+{{ block.stack.data }}
+
 <sub>{{ t.stack.backend }}</sub><br/>
 {{ block.stack.backend }}
 
-<sub>{{ t.stack.data }}</sub><br/>
-{{ block.stack.data }}
+<sub>{{ t.stack.devops }}</sub><br/>
+{{ block.stack.devops }}
 
 <sub>{{ t.stack.frontend }}</sub><br/>
 {{ block.stack.frontend }}
 
 </details>
 
-<details open>
+<details>
 <summary><b>📊 {{ t.activity.title }}</b></summary>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
-<br/><br/>
 <img src="https://github-readme-stats.vercel.app/api?username={{ github_user }}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&include_all_commits=true&locale={{ lang.stats_locale }}" alt="GitHub stats" width="49%"/>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user={{ github_user }}&theme=tokyonight&hide_border=true&background=0D1117&locale={{ lang.stats_locale }}" alt="GitHub streak" width="49%"/>
 <br/><br/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username={{ github_user }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&locale={{ lang.stats_locale }}" alt="Top languages" width="50%"/>
-<br/><br/>
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
 </div>
 
 </details>

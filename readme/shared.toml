@@ -104,6 +104,25 @@ logo = "terraform"
 group = "data"
 
 [[stack]]
+name = "Docker"
+color = "2496ED"
+logo = "docker"
+group = "devops"
+
+[[stack]]
+name = "Linux"
+color = "FCC624"
+logo = "linux"
+logo_color = "black"
+group = "devops"
+
+[[stack]]
+name = "GitHub Actions"
+color = "2088FF"
+logo = "githubactions"
+group = "devops"
+
+[[stack]]
 name = "Angular"
 color = "DD0031"
 logo = "angular"
@@ -148,6 +167,7 @@ private = true
 [[projects]]
 key = "portfolio"
 stack = "Next.js · TypeScript · three.js"
+demo = "https://cierisamuele.vercel.app"
 
 [[projects]]
 key = "rusty-tictactoe"

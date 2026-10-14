@@ -123,6 +123,9 @@ def projects_table(shared: dict[str, Any], locale: dict[str, Any]) -> str:
             name = f"**{key}** <sub>{t['private']}</sub>"
         else:
             name = f"[**{key}**](https://github.com/{shared['github_user']}/{key})"
+            if project.get("demo"):
+                live_label = t.get("live", "Live")
+                name += f" · [{live_label}]({project['demo']})"
         rows.append(f"| {name} | {t['descriptions'][key]} | {project['stack']} |")
     return "\n".join(rows)
 

@@ -16,10 +16,10 @@ In parallel, I'm studying part-time for a **B.Sc. in Computer Engineering** at t
 [now]
 title = "Now"
 items = [
-  "Front-ends with Angular at {{ company }}",
-  "Studying Data Engineering, with Rust as my tool of choice",
-  "**aria-er**: Rust ingestion, dbt and Dagster on open air-quality data",
-  "**your-finance**: a personal finance app in Rust and PostgreSQL",
+  "Data pipelines in Rust, partitioned Parquet storage and dbt models",
+  "DAG orchestration and data quality testing with Dagster",
+  "Modular backend architecture for **your-finance** (Axum, PostgreSQL with RLS)",
+  "Frontend development with Angular and containerized environments",
 ]
 
 [next]
@@ -40,6 +40,7 @@ col_project = "Project"
 col_description = "Description"
 col_stack = "Stack"
 private = "private"
+live = "Live"
 
 [projects.descriptions]
 your-finance = "Personal finance app: Rust API, PostgreSQL, mobile and desktop clients."
@@ -53,8 +54,9 @@ rusty-tictactoe = "Two-player Tic Tac Toe for the terminal."
 
 [stack]
 title = "Stack"
-backend = "Backend"
 data = "Data engineering"
+backend = "Backend"
+devops = "DevOps & Tools"
 frontend = "Frontend"
 
 [activity]

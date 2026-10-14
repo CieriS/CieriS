@@ -16,10 +16,10 @@ En parallèle, je prépare à temps partiel une **licence en ingénierie informa
 [now]
 title = "En ce moment"
 items = [
-  "Front-ends avec Angular chez {{ company }}",
-  "Étude du Data Engineering, avec Rust comme outil",
-  "**aria-er** : ingestion en Rust, dbt et Dagster sur des données ouvertes de qualité de l'air",
-  "**your-finance** : une application de finances personnelles en Rust et PostgreSQL",
+  "Pipelines de données en Rust, stockage Parquet partitionné et modèles dbt",
+  "Orchestration de DAGs et tests de qualité des données avec Dagster",
+  "Architecture backend modulaire pour **your-finance** (Axum, PostgreSQL avec RLS)",
+  "Développement frontend avec Angular et conteneurisation des environnements",
 ]
 
 [next]
@@ -40,6 +40,7 @@ col_project = "Projet"
 col_description = "Description"
 col_stack = "Stack"
 private = "privé"
+live = "Live"
 
 [projects.descriptions]
 your-finance = "Application de finances personnelles : API en Rust, PostgreSQL, clients mobile et desktop."
@@ -53,8 +54,9 @@ rusty-tictactoe = "Morpion à deux joueurs dans le terminal."
 
 [stack]
 title = "Stack"
-backend = "Backend"
 data = "Data engineering"
+backend = "Backend"
+devops = "DevOps & Outils"
 frontend = "Frontend"
 
 [activity]

@@ -16,10 +16,10 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 [now]
 title = "Aktuell"
 items = [
-  "Frontends mit Angular bei {{ company }}",
-  "Data-Engineering-Studium, mit Rust als Werkzeug",
-  "**aria-er**: Rust-Ingestion, dbt und Dagster auf offenen Luftqualitätsdaten",
-  "**your-finance**: eine App für persönliche Finanzen in Rust und PostgreSQL",
+  "Datenpipelines in Rust, partitionierter Parquet-Speicher und dbt-Modelle",
+  "DAG-Orchestrierung und Datenqualitätstests mit Dagster",
+  "Modulare Backend-Architektur für **your-finance** (Axum, PostgreSQL mit RLS)",
+  "Frontend-Entwicklung mit Angular und containerisierte Umgebungen",
 ]
 
 [next]
@@ -40,6 +40,7 @@ col_project = "Projekt"
 col_description = "Beschreibung"
 col_stack = "Stack"
 private = "privat"
+live = "Live"
 
 [projects.descriptions]
 your-finance = "App für persönliche Finanzen: Rust-API, PostgreSQL, Mobile- und Desktop-Clients."
@@ -53,8 +54,9 @@ rusty-tictactoe = "Tic Tac Toe für zwei Spieler im Terminal."
 
 [stack]
 title = "Stack"
-backend = "Backend"
 data = "Data Engineering"
+backend = "Backend"
+devops = "DevOps & Werkzeuge"
 frontend = "Frontend"
 
 [activity]

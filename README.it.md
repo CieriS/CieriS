@@ -36,10 +36,10 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 
 **🔧 Ora**
 
-- Front-end con Angular in TAS S.p.A.
-- Studio del Data Engineering, con Rust come strumento
-- **aria-er**: ingestione in Rust, dbt e Dagster su open data della qualità dell'aria
-- **your-finance**: un'app di finanza personale in Rust e PostgreSQL
+- Pipeline dati in Rust, storage Parquet partizionato e modelli dbt
+- Orchestrazione DAG e data quality testing con Dagster
+- Architettura backend modulare per **your-finance** (Axum, PostgreSQL con RLS)
+- Sviluppo frontend con Angular e containerizzazione degli ambienti
 
 </td>
 <td width="50%" valign="top">
@@ -56,8 +56,7 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 
 </details>
 
-<details>
-<summary><b>⭐ Progetto in evidenza</b></summary>
+### ⭐ Progetto in evidenza
 
 <a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=it" alt="aria-er"/></a>
 
@@ -65,15 +64,13 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 
 <sub><code>ARPAE open data → Rust ingestor → partitioned Parquet → dbt (DuckDB · BigQuery) → Dagster</code></sub>
 
-</details>
-
 <details>
 <summary><b>📂 Altri progetti</b></summary>
 
 | Progetto | Descrizione | Stack |
 |---|---|---|
 | **your-finance** <sub>privato</sub> | App di finanza personale: API in Rust, PostgreSQL, client mobile e desktop. | Rust · Axum · PostgreSQL · Expo |
-| [**portfolio**](https://github.com/CieriS/portfolio) | Il mio sito personale, generato staticamente in inglese, italiano, francese e tedesco. | Next.js · TypeScript · three.js |
+| [**portfolio**](https://github.com/CieriS/portfolio) · [Live](https://cierisamuele.vercel.app) | Il mio sito personale, generato staticamente in inglese, italiano, francese e tedesco. | Next.js · TypeScript · three.js |
 | [**rusty-tictactoe**](https://github.com/CieriS/rusty-tictactoe) | Tris a due giocatori da terminale. | Rust |
 | [**dump-backup-sorter**](https://github.com/CieriS/dump-backup-sorter) | Smista il dump del telefono in un archivio media datato e senza duplicati e in un backup di tutto il resto. | Python |
 | [**mani-verdi**](https://github.com/CieriS/mani-verdi) | Sito vetrina per un giardiniere professionista vicino a Bologna. | Astro · Tailwind |
@@ -86,10 +83,6 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 <details>
 <summary><b>🧰 Stack</b></summary>
 
-<sub>Backend</sub><br/>
-<img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
-<img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-
 <sub>Data engineering</sub><br/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
 <img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" alt="dbt"/>
@@ -97,6 +90,15 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 <img src="https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black" alt="DuckDB"/>
 <img src="https://img.shields.io/badge/BigQuery-669DF6?style=for-the-badge&logo=googlebigquery&logoColor=white" alt="BigQuery"/>
 <img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform"/>
+
+<sub>Backend</sub><br/>
+<img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
+<img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+
+<sub>DevOps & Strumenti</sub><br/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
 
 <sub>Frontend</sub><br/>
 <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"/>
@@ -108,18 +110,14 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 
 </details>
 
-<details open>
+<details>
 <summary><b>📊 Attività</b></summary>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
-<br/><br/>
 <img src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&include_all_commits=true&locale=it" alt="GitHub stats" width="49%"/>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=CieriS&theme=tokyonight&hide_border=true&background=0D1117&locale=it" alt="GitHub streak" width="49%"/>
 <br/><br/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&locale=it" alt="Top languages" width="50%"/>
-<br/><br/>
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
 </div>
 
 </details>
