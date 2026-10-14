@@ -80,6 +80,24 @@ class BlockTests(unittest.TestCase):
         self.assertEqual(lines[2], "| [**pub**](https://github.com/me/pub) | Public one | Rust |")
         self.assertEqual(lines[3], "| **priv** <sub>private</sub> | Secret one | Go |")
 
+    def test_projects_table_includes_live_demo_link_when_provided(self):
+        shared = {
+            "github_user": "me",
+            "projects": [{"key": "pub", "stack": "Rust", "demo": "https://example.com"}],
+        }
+        locale = {
+            "projects": {
+                "col_project": "P",
+                "col_description": "D",
+                "col_stack": "S",
+                "private": "private",
+                "live": "Live",
+                "descriptions": {"pub": "Public one"},
+            }
+        }
+        lines = br.projects_table(shared, locale).splitlines()
+        self.assertEqual(lines[2], "| [**pub**](https://github.com/me/pub) · [Live](https://example.com) | Public one | Rust |")
+
 
 class ValidateTests(unittest.TestCase):
     shared = {
