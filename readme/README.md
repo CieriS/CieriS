@@ -38,3 +38,7 @@ Python 3.11+, standard library only.
   `[projects.descriptions]` in **every** locale (the build fails if one is missing).
 - **Add a language**: add a `[[languages]]` entry and `locales/<code>.toml` with the same keys as
   `locales/en.toml`. The first language is the reference and the default `README.md`.
+
+## Git hooks
+
+`.githooks/pre-push` runs before every push: a secret scan of the outgoing commits (gitleaks, or its Docker image when the binary is missing) and then the checks (`uv run --no-project --python '>=3.11' python -m unittest discover -s tests && uv run --no-project --python '>=3.11' python scripts/build_readme.py --check`; `uv` because the macOS `python3` can be 3.9, without `tomllib`). Enable it once per clone with `git config core.hooksPath .githooks`; skip it once with `git push --no-verify`. On CI, `.github/workflows/secret-scan.yml` scans the whole history of every branch and tag.
