@@ -75,6 +75,8 @@ class Stats:
     reviews: int
     issues: int
     contributed_to: int  # other people's repositories; the row is hidden while it is 0
+    releases: int  # published (not draft) releases in your public repositories
+    tags: int
     streak: Streak
     languages: list[Language]
     featured: Repo
@@ -131,10 +133,12 @@ def parse(user: dict[str, Any], featured_repo: str, today: date) -> Stats:
                 days[date.fromisoformat(day["date"])] = day["contributionCount"]
     sizes: dict[str, int] = {}
     colors: dict[str, str] = {}
-    stars = 0
+    stars = releases = tags = 0
     featured = None
     for repo in user["repositories"]["nodes"]:
         stars += repo["stargazerCount"]
+        releases += sum(1 for release in repo["releases"]["nodes"] if not release["isDraft"])
+        tags += repo["refs"]["totalCount"]
         for edge in repo["languages"]["edges"]:
             sizes[edge["node"]["name"]] = sizes.get(edge["node"]["name"], 0) + edge["size"]
             colors[edge["node"]["name"]] = edge["node"]["color"]
@@ -154,6 +158,8 @@ def parse(user: dict[str, Any], featured_repo: str, today: date) -> Stats:
         reviews=reviews,
         issues=user["issues"]["totalCount"],
         contributed_to=user["repositoriesContributedTo"]["totalCount"],
+        releases=releases,
+        tags=tags,
         streak=compute_streak(days, today),
         languages=top_languages(sizes, colors),
         featured=featured,
@@ -190,6 +196,7 @@ def stats_card(stats: Stats, labels: dict[str, str]) -> str:
         (labels["reviews"], compact(stats.reviews)),
         (labels["issues"], compact(stats.issues)),
     ]
+    rows.append((labels["releases"], f"{compact(stats.releases)} · {compact(stats.tags)} {labels['tags']}"))
     if stats.contributed_to:
         rows.append((labels["contributed_to"], compact(stats.contributed_to)))
     body = "".join(
@@ -296,6 +303,7 @@ def fetch_user(token: str, login: str) -> dict[str, Any]:
         "repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, PULL_REQUEST_REVIEW, ISSUE]) { totalCount } "
         "repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) { nodes { "
         "name description stargazerCount forkCount primaryLanguage { name color } "
+        "releases(first: 100) { nodes { isDraft } } refs(refPrefix: \"refs/tags/\") { totalCount } "
         "languages(first: 20, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } } } } }"
     )
     return graphql(token, query, {"login": login})["user"]

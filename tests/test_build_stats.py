@@ -50,11 +50,13 @@ def user_payload(featured: str = "demo") -> dict:
                 {
                     "name": featured, "description": "A <demo> & test", "stargazerCount": 2, "forkCount": 1,
                     "primaryLanguage": {"name": "Rust", "color": "#dea584"},
+                    "releases": {"nodes": [{"isDraft": False}, {"isDraft": True}]}, "refs": {"totalCount": 2},
                     "languages": {"edges": [{"size": 300, "node": {"name": "Rust", "color": "#dea584"}}]},
                 },
                 {
                     "name": "other", "description": None, "stargazerCount": 1, "forkCount": 0,
                     "primaryLanguage": None,
+                    "releases": {"nodes": [{"isDraft": False}]}, "refs": {"totalCount": 1},
                     "languages": {"edges": [{"size": 100, "node": {"name": "Python", "color": None}}]},
                 },
             ]
@@ -110,6 +112,7 @@ class ParseTests(unittest.TestCase):
         stats = bs.parse(user_payload(), "demo", date(2026, 1, 2))
         self.assertEqual((stats.stars, stats.commits, stats.pull_requests, stats.issues), (3, 10, 4, 5))
         self.assertEqual((stats.merged_pull_requests, stats.reviews, stats.contributed_to), (3, 8, 0))
+        self.assertEqual((stats.releases, stats.tags), (2, 3))  # drafts are not counted
         self.assertEqual(stats.streak.total, 3)
         self.assertEqual(stats.streak.longest, 2)  # 2025-12-31 → 2026-01-01 crosses the year boundary
         self.assertEqual([lang.name for lang in stats.languages], ["Rust", "Python"])
@@ -155,14 +158,18 @@ class RenderTests(unittest.TestCase):
         labels = self.locales["en"]["activity"]["cards"]
         self.assertIn(">3 / 4<", bs.stats_card(self.stats, labels))
 
+    def test_releases_and_tags_share_a_row(self):
+        labels = self.locales["it"]["activity"]["cards"]
+        self.assertIn(f">2 · 3 {labels['tags']}<", bs.stats_card(self.stats, labels))
+
     def test_contributed_to_row_only_when_not_zero(self):
         labels = self.locales["en"]["activity"]["cards"]
         hidden = bs.stats_card(self.stats, labels)
         shown = bs.stats_card(bs.Stats(**{**self.stats.__dict__, "contributed_to": 2}), labels)
         self.assertNotIn(labels["contributed_to"], hidden)
         self.assertIn(labels["contributed_to"], shown)
-        self.assertIn('height="220"', shown)  # one more row than the hidden card (195)
-        self.assertIn('height="195"', hidden)
+        self.assertIn('height="245"', shown)  # one more row than the hidden card (220)
+        self.assertIn('height="220"', hidden)
 
     def test_long_description_is_truncated(self):
         repo = bs.Repo("r", "x" * 100, None, None, 0, 0)
