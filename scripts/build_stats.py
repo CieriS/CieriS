@@ -196,7 +196,8 @@ def stats_card(stats: Stats, labels: dict[str, str]) -> str:
         (labels["reviews"], compact(stats.reviews)),
         (labels["issues"], compact(stats.issues)),
     ]
-    rows.append((labels["releases"], f"{compact(stats.releases)} · {compact(stats.tags)} {labels['tags']}"))
+    rows.append((labels["releases"], compact(stats.releases)))
+    rows.append((labels["tags"], compact(stats.tags)))
     if stats.contributed_to:
         rows.append((labels["contributed_to"], compact(stats.contributed_to)))
     body = "".join(

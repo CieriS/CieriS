@@ -54,7 +54,7 @@ then force-pushes the files to the `output` branch; the READMEs load them from `
 - Counts come from the workflow's `GITHUB_TOKEN`: public activity only (private repositories are
   not counted). Languages: bytes of your public, non-fork repositories, top 8.
 - Stats card: stars, commits, merged / total pull requests, code reviews, issues,
-  published releases · tags of your public repositories; "contributed to"
+  published releases and tags of your public repositories (one row each); "contributed to"
   (other people's repositories) appears only once it is above 0.
 - The current streak counts today only once there is a contribution; until then it ends yesterday.
 - Preview locally: `GITHUB_TOKEN="$(gh auth token)" python3 scripts/build_stats.py --out /tmp/cards`.
