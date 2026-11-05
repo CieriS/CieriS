@@ -59,7 +59,7 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 <details>
 <summary><b>⭐ Vorgestelltes Projekt</b></summary>
 
-<a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=de" alt="aria-er"/></a>
+<a href="https://github.com/CieriS/aria-er"><img src="https://raw.githubusercontent.com/CieriS/CieriS/output/featured.svg" alt="aria-er"/></a>
 
 **aria-er** macht aus verstreuten Luftqualitätsmessungen der Umweltagentur der Emilia-Romagna einen einheitlichen, getesteten Datensatz: Überschreitungen gesetzlicher Grenzwerte, Schadstofftrends, Korrelation mit dem Wetter.
 
@@ -119,10 +119,10 @@ Parallel studiere ich in Teilzeit **Technische Informatik (B.Sc.)** an der Unive
 <div align="center">
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
 <br/><br/>
-<img src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&include_all_commits=true&locale=de" alt="GitHub stats" width="49%"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=CieriS&theme=tokyonight&hide_border=true&background=0D1117&locale=de" alt="GitHub streak" width="49%"/>
+<img src="https://raw.githubusercontent.com/CieriS/CieriS/output/stats-de.svg" alt="GitHub stats" width="49%"/>
+<img src="https://raw.githubusercontent.com/CieriS/CieriS/output/streak-de.svg" alt="GitHub streak" width="49%"/>
 <br/><br/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&locale=de" alt="Top languages" width="50%"/>
+<img src="https://raw.githubusercontent.com/CieriS/CieriS/output/langs-de.svg" alt="Top languages" width="50%"/>
 <br/><br/>
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
 </div>

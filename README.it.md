@@ -59,7 +59,7 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 <details>
 <summary><b>⭐ Progetto in evidenza</b></summary>
 
-<a href="https://github.com/CieriS/aria-er"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CieriS&repo=aria-er&theme=github_dark&hide_border=true&locale=it" alt="aria-er"/></a>
+<a href="https://github.com/CieriS/aria-er"><img src="https://raw.githubusercontent.com/CieriS/CieriS/output/featured.svg" alt="aria-er"/></a>
 
 **aria-er** trasforma le misure frammentate della qualità dell'aria di ARPAE Emilia-Romagna in un dataset unico e testato: superamenti dei limiti di legge, andamento degli inquinanti, correlazione con il meteo.
 
@@ -119,10 +119,10 @@ In parallelo studio part-time per la **Laurea in Ingegneria Informatica** all'Un
 <div align="center">
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
 <br/><br/>
-<img src="https://github-readme-stats.vercel.app/api?username=CieriS&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&include_all_commits=true&locale=it" alt="GitHub stats" width="49%"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=CieriS&theme=tokyonight&hide_border=true&background=0D1117&locale=it" alt="GitHub streak" width="49%"/>
+<img src="https://raw.githubusercontent.com/CieriS/CieriS/output/stats-it.svg" alt="GitHub stats" width="49%"/>
+<img src="https://raw.githubusercontent.com/CieriS/CieriS/output/streak-it.svg" alt="GitHub streak" width="49%"/>
 <br/><br/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CieriS&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&locale=it" alt="Top languages" width="50%"/>
+<img src="https://raw.githubusercontent.com/CieriS/CieriS/output/langs-it.svg" alt="Top languages" width="50%"/>
 <br/><br/>
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" alt=""/>
 </div>

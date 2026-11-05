@@ -61,3 +61,15 @@ frontend = "Frontend"
 
 [activity]
 title = "Activity"
+
+# Labels of the SVG cards built by scripts/build_stats.py.
+[activity.cards]
+stats_title = "GitHub stats"
+stars = "Stars earned"
+commits = "Commits"
+pull_requests = "Pull requests"
+issues = "Issues"
+streak_total = "Total contributions"
+streak_current = "Current streak"
+streak_longest = "Longest streak"
+languages_title = "Top languages"
