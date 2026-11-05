@@ -71,7 +71,10 @@ class Stats:
     stars: int
     commits: int
     pull_requests: int
+    merged_pull_requests: int
+    reviews: int
     issues: int
+    contributed_to: int  # other people's repositories; the row is hidden while it is 0
     streak: Streak
     languages: list[Language]
     featured: Repo
@@ -117,11 +120,12 @@ def top_languages(sizes: dict[str, int], colors: dict[str, str], count: int = LA
 def parse(user: dict[str, Any], featured_repo: str, today: date) -> Stats:
     """Turn the GraphQL ``user`` payload into the card data."""
     days: dict[date, int] = {}
-    commits = 0
+    commits = reviews = 0
     for key, collection in user.items():
         if not key.startswith("year"):
             continue
         commits += collection["totalCommitContributions"]
+        reviews += collection["totalPullRequestReviewContributions"]
         for week in collection["contributionCalendar"]["weeks"]:
             for day in week["contributionDays"]:
                 days[date.fromisoformat(day["date"])] = day["contributionCount"]
@@ -146,7 +150,10 @@ def parse(user: dict[str, Any], featured_repo: str, today: date) -> Stats:
         stars=stars,
         commits=commits,
         pull_requests=user["pullRequests"]["totalCount"],
+        merged_pull_requests=user["mergedPullRequests"]["totalCount"],
+        reviews=reviews,
         issues=user["issues"]["totalCount"],
+        contributed_to=user["repositoriesContributedTo"]["totalCount"],
         streak=compute_streak(days, today),
         languages=top_languages(sizes, colors),
         featured=featured,
@@ -177,17 +184,20 @@ def card(width: int, height: int, title: str, body: str) -> str:
 
 def stats_card(stats: Stats, labels: dict[str, str]) -> str:
     rows = [
-        (labels["stars"], stats.stars),
-        (labels["commits"], stats.commits),
-        (labels["pull_requests"], stats.pull_requests),
-        (labels["issues"], stats.issues),
+        (labels["stars"], compact(stats.stars)),
+        (labels["commits"], compact(stats.commits)),
+        (labels["merged_pull_requests"], f"{compact(stats.merged_pull_requests)} / {compact(stats.pull_requests)}"),
+        (labels["reviews"], compact(stats.reviews)),
+        (labels["issues"], compact(stats.issues)),
     ]
+    if stats.contributed_to:
+        rows.append((labels["contributed_to"], compact(stats.contributed_to)))
     body = "".join(
         f'<text x="25" y="{70 + i * 25}" fill="#{THEME["text"]}" font-size="14">{escape(label)}:</text>'
-        f'<text x="300" y="{70 + i * 25}" fill="#{THEME["text"]}" font-size="14" font-weight="700">{compact(value)}</text>'
+        f'<text x="300" y="{70 + i * 25}" fill="#{THEME["text"]}" font-size="14" font-weight="700">{value}</text>'
         for i, (label, value) in enumerate(rows)
     )
-    return card(495, 170, labels["stats_title"], body)
+    return card(495, 70 + len(rows) * 25, labels["stats_title"], body)
 
 
 def streak_card(streak: Streak, labels: dict[str, str]) -> str:
@@ -201,7 +211,7 @@ def streak_card(streak: Streak, labels: dict[str, str]) -> str:
         x = 82 + i * 165
         color = THEME["accent"] if i == 1 else THEME["title"]
         body += (
-            f'<text x="{x}" y="85" text-anchor="middle" fill="#{color}" font-size="28" font-weight="700">{compact(value)}</text>'
+            f'<text x="{x}" y="85" text-anchor="middle" fill="#{color}" font-size="28" font-weight="700">{value}</text>'
             f'<text x="{x}" y="120" text-anchor="middle" fill="#{THEME["text"]}" font-size="14">{escape(label)}</text>'
             f'<text x="{x}" y="145" text-anchor="middle" fill="#{THEME["muted"]}" font-size="11">{escape(period)}</text>'
         )
@@ -276,13 +286,14 @@ def fetch_user(token: str, login: str) -> dict[str, Any]:
         raise StatsError(f"user {login!r} not found")
     year_fields = "".join(
         f'year{year}: contributionsCollection(from: "{year}-01-01T00:00:00Z", to: "{year}-12-31T23:59:59Z") '
-        "{ totalCommitContributions contributionCalendar { weeks { contributionDays { date contributionCount } } } } "
+        "{ totalCommitContributions totalPullRequestReviewContributions contributionCalendar { weeks { contributionDays { date contributionCount } } } } "
         for year in years["user"]["contributionsCollection"]["contributionYears"]
     )
     query = (
         "query($login: String!) { user(login: $login) { "
         f"{year_fields}"
-        "pullRequests { totalCount } issues { totalCount } "
+        "pullRequests { totalCount } mergedPullRequests: pullRequests(states: MERGED) { totalCount } issues { totalCount } "
+        "repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, PULL_REQUEST_REVIEW, ISSUE]) { totalCount } "
         "repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) { nodes { "
         "name description stargazerCount forkCount primaryLanguage { name color } "
         "languages(first: 20, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } } } } }"

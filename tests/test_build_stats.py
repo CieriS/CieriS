@@ -33,13 +33,17 @@ def user_payload(featured: str = "demo") -> dict:
     return {
         "year2025": {
             "totalCommitContributions": 7,
+            "totalPullRequestReviewContributions": 6,
             "contributionCalendar": {"weeks": [{"contributionDays": [day("2025-12-31", 2)]}]},
         },
         "year2026": {
             "totalCommitContributions": 3,
+            "totalPullRequestReviewContributions": 2,
             "contributionCalendar": {"weeks": [{"contributionDays": [day("2026-01-01", 1), day("2026-01-02", 0)]}]},
         },
         "pullRequests": {"totalCount": 4},
+        "mergedPullRequests": {"totalCount": 3},
+        "repositoriesContributedTo": {"totalCount": 0},
         "issues": {"totalCount": 5},
         "repositories": {
             "nodes": [
@@ -105,6 +109,7 @@ class ParseTests(unittest.TestCase):
     def test_sums_every_year_and_repository(self):
         stats = bs.parse(user_payload(), "demo", date(2026, 1, 2))
         self.assertEqual((stats.stars, stats.commits, stats.pull_requests, stats.issues), (3, 10, 4, 5))
+        self.assertEqual((stats.merged_pull_requests, stats.reviews, stats.contributed_to), (3, 8, 0))
         self.assertEqual(stats.streak.total, 3)
         self.assertEqual(stats.streak.longest, 2)  # 2025-12-31 → 2026-01-01 crosses the year boundary
         self.assertEqual([lang.name for lang in stats.languages], ["Rust", "Python"])
@@ -145,6 +150,19 @@ class RenderTests(unittest.TestCase):
             with self.subTest(code=code):
                 self.assertIn(locale["activity"]["cards"]["stats_title"], files[f"stats-{code}.svg"])
                 self.assertIn(locale["activity"]["cards"]["streak_current"], files[f"streak-{code}.svg"])
+
+    def test_merged_pull_requests_shown_out_of_total(self):
+        labels = self.locales["en"]["activity"]["cards"]
+        self.assertIn(">3 / 4<", bs.stats_card(self.stats, labels))
+
+    def test_contributed_to_row_only_when_not_zero(self):
+        labels = self.locales["en"]["activity"]["cards"]
+        hidden = bs.stats_card(self.stats, labels)
+        shown = bs.stats_card(bs.Stats(**{**self.stats.__dict__, "contributed_to": 2}), labels)
+        self.assertNotIn(labels["contributed_to"], hidden)
+        self.assertIn(labels["contributed_to"], shown)
+        self.assertIn('height="220"', shown)  # one more row than the hidden card (195)
+        self.assertIn('height="195"', hidden)
 
     def test_long_description_is_truncated(self):
         repo = bs.Repo("r", "x" * 100, None, None, 0, 0)
