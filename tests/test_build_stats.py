@@ -158,9 +158,11 @@ class RenderTests(unittest.TestCase):
         labels = self.locales["en"]["activity"]["cards"]
         self.assertIn(">3 / 4<", bs.stats_card(self.stats, labels))
 
-    def test_releases_and_tags_share_a_row(self):
+    def test_releases_and_tags_have_separate_rows(self):
         labels = self.locales["it"]["activity"]["cards"]
-        self.assertIn(f">2 · 3 {labels['tags']}<", bs.stats_card(self.stats, labels))
+        card = bs.stats_card(self.stats, labels)
+        self.assertRegex(card, f">{labels['releases']}:</text><text [^>]*>2<")
+        self.assertRegex(card, f">{labels['tags']}:</text><text [^>]*>3<")
 
     def test_contributed_to_row_only_when_not_zero(self):
         labels = self.locales["en"]["activity"]["cards"]
@@ -168,8 +170,8 @@ class RenderTests(unittest.TestCase):
         shown = bs.stats_card(bs.Stats(**{**self.stats.__dict__, "contributed_to": 2}), labels)
         self.assertNotIn(labels["contributed_to"], hidden)
         self.assertIn(labels["contributed_to"], shown)
-        self.assertIn('height="245"', shown)  # one more row than the hidden card (220)
-        self.assertIn('height="220"', hidden)
+        self.assertIn('height="270"', shown)  # one more row than the hidden card (245)
+        self.assertIn('height="245"', hidden)
 
     def test_long_description_is_truncated(self):
         repo = bs.Repo("r", "x" * 100, None, None, 0, 0)
