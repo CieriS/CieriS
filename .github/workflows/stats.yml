@@ -1,0 +1,41 @@
+# Rebuilds the activity cards (scripts/build_stats.py) and publishes them on the `output` branch,
+# which the READMEs load (stats_url in readme/shared.toml). The branch holds one force-pushed
+# commit, so its history does not grow. GITHUB_TOKEN sees public activity only.
+name: Stats cards
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [scripts/build_stats.py, readme/**, .github/workflows/stats.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - name: Build cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_stats.py --out "$RUNNER_TEMP/cards"
+      - name: Publish on the output branch
+        working-directory: ${{ runner.temp }}/cards
+        run: |
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -q -m "chore: update activity cards"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" output

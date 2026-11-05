@@ -7,6 +7,9 @@ motto = "cargo build --release my-career · warnings: 47 · errors: 0 (so far)"
 github_user = "CieriS"
 company = "TAS S.p.A."
 since_year = 2022
+# Where the activity cards (SVG) are published: the `output` branch, rebuilt daily by
+# .github/workflows/stats.yml with scripts/build_stats.py.
+stats_url = "https://raw.githubusercontent.com/{{ github_user }}/{{ github_user }}/output"
 
 [links]
 website = "https://cierisamuele.vercel.app"
@@ -23,34 +26,29 @@ footer_gradient = "0:2c5364,50:203a43,100:0f2027"
 font_color = "e6edf3"
 
 # First language = reference for validation and the default README.md shown on the profile.
-# stats_locale: language code understood by github-readme-stats.
 [[languages]]
 code = "en"
 label = "English"
 flag = "🇬🇧"
 file = "README.md"
-stats_locale = "en"
 
 [[languages]]
 code = "it"
 label = "Italiano"
 flag = "🇮🇹"
 file = "README.it.md"
-stats_locale = "it"
 
 [[languages]]
 code = "fr"
 label = "Français"
 flag = "🇫🇷"
 file = "README.fr.md"
-stats_locale = "fr"
 
 [[languages]]
 code = "de"
 label = "Deutsch"
 flag = "🇩🇪"
 file = "README.de.md"
-stats_locale = "de"
 
 # Stack badges. group = the template block they appear in ({{ block.stack.<group> }}).
 # logo = Simple Icons slug. Rule: list only what a repository demonstrates.

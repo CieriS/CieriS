@@ -2,6 +2,7 @@ name: README
 
 on:
   push:
+    branches-ignore: [output] # generated cards only, see stats.yml
   pull_request:
 
 permissions:
